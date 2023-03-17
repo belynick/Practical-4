@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7DB20AC0-126C-4ED3-8AA6-528ABDD4A8A4}</ProjectGuid>
+    <ProjectGuid>{7CC6E506-A198-4531-9200-6DC3DA7677E0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Practical_4</RootNamespace>
-    <AssemblyName>Practical 4</AssemblyName>
+    <RootNamespace>Practical_4_3</RootNamespace>
+    <AssemblyName>Practical 4_3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomEventArgs.cs" />
     <Compile Include="EventBus.cs" />
-    <Compile Include="EventData.cs" />
-    <Compile Include="EventThrottler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publisher.cs" />
+    <Compile Include="RetryPolicy.cs" />
+    <Compile Include="Subscriber.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
